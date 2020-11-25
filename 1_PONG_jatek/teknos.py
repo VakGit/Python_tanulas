@@ -1,0 +1,1 @@
+print("teknos vagyok")
