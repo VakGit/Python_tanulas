@@ -146,7 +146,8 @@ while True:
     ablak.update() #ablak frissítése 
     
     labda.setx(labda.xcor() + labda.valtozasX)
-    labda.sety(labda.ycor() + labda.valtozasY) # nem tudom miért jó üres sor van vége kellene hogy legyen a ciklusnak 
+    labda.sety(labda.ycor() + labda.valtozasY) # nem tudom miért jó üres sor van vége kellene hogy legyen a ciklusnak
+                                               # lehet hogy nem  az üres sor számít, hanem a 4 space-es behuzás?
 
     #LABDA FÜGGŐLEGES MOZGÁSÁNAK LKEZELÉSE
     #az ablak tetejéről pattanjon vissza 
