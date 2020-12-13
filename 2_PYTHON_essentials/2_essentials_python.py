@@ -221,4 +221,58 @@ if szoveg==mirror:
 else:
   print(f"::{szoveg}::  NEM palindrom.")
 
-#NAGYON VIGYÁZNI ÍGY NAGYOT LEHET HIBÁZNI C#ban C++ban EZ NEM LENNE HIBA
+#NAGYON VIGYÁZNI ÍGY NAGYOT LEHET HIBÁZNI 
+
+"""
+-------------------------------------
+**FIGYELEM !!!! A LISTA MUTABLE !!!**
+-------------------------------------
+>A rajta végrehajott fv-ek hatására a lista az eredeti helyükön változik meg
+"""
+
+#egy lista elemeinek megfordítása 
+lista=[1,2,3,4]
+print(lista)
+lista.reverse()#.reverse() megfordítja az elemek sorrendjét
+print(lista)
+
+"""
+-----------------------
+**TIPIKUS STRING FV_EK**
+------------------------
+"""
+
+szoveg="Indul a gorog aludni"
+#szóközöket törlöm és kiírom, ez a c#-ban egy fv. amely egy uj stringet ad vissza 
+print(szoveg.replace(" ",""))
+
+#megforditva kiirom
+print(szoveg[::-1])
+
+#a substring x-ik pozicióját kapjuk meg
+print(szoveg.find("gorog"))
+
+#nagybetű
+print(szoveg.upper())
+
+#kisbetű "\" uj sor
+print(f"{szoveg.lower()}\n\n")
+
+#megszámolja mennyi substring van a szövegben pld. o-betű
+print(szoveg.count("o"))
+
+#szoveg hossza
+print(len(szoveg))
+
+#szöveg listába rakása alpertelmezetten a szóköz a határoló .split() fv.
+lista=szoveg.split()
+print(lista)
+
+#beépített help 1. az adattipusú változón meghívható fv-ek
+#másképpen:  egy objektumon értelmezett összes attributum vagy függvény
+print(dir(str))
+print('\n')#uj sor , ures sor 
+print(dir(int))
+
+#beépített help 2. egy specifikus fv. -hez tartozó leírás
+print(help(str.count))
